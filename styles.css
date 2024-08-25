@@ -1,0 +1,202 @@
+/*--------basic tags--------*/
+h3{
+    color: white;
+    font-size: 50px;
+    font-family: "Poppins",sans-serif;
+
+}
+header{
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 80px;
+}
+h1{
+    font-size: 50px ;
+    text-align: center;
+    
+}
+hr{
+    height: 10px;
+    background-color:rgb(47, 44, 254);
+}
+a{
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    cursor: pointer; 
+}
+/*---------specfic tags------*/
+.iframeYoutube{
+    border-radius: 5%;
+    box-shadow: grey 5px 5px 5px;
+}
+.youtube{
+    background-image: url("images/youtubebackground.jpg"); 
+    background-size: fill;
+    background-position: center;
+    padding: 100px;
+    color: rgb(255, 255, 255);
+}
+.Michael{
+    background-image: url("images/Background.jpg"); 
+    background-size: fill;
+    background-position: center;
+    padding: 100px;
+    color: rgb(255, 255, 255);
+}
+.encyclopedia{
+    background-image: url("images/enclopediabackground.jpg"); 
+    background-size: fill;
+    background-position: center;
+    padding: 100px;
+    color: rgb(25, 33, 255);
+}
+
+/*---SCROLL ANIMATION----*/
+
+.animate-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+  
+.animate-in.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.iframe-container {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+  
+.iframe-container.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.encyclopedia-section, .audio-section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+  
+.encyclopedia-section.active, .audio-section.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*----------NAVIGATION BARS---------*/
+.topnav {
+    overflow: hidden;
+    background-color: #ffffff;
+}
+  
+.topnav a {
+    float: left;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+.topnav a:hover {
+    background-color: #4ce62a;
+    color: black;
+}
+  
+.topnav a.active {
+    background-color: #06d5ff;
+    color: black;
+}
+
+/*----BUTTONS-----*/
+
+.button-48 {
+  appearance: none;
+  background-color: #FFFFFF;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Clarkson,Helvetica,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 1em;
+  margin: 0;
+  opacity: 1;
+  outline: 0;
+  padding: 1.5em 2.2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-rendering: geometricprecision;
+  text-transform: uppercase;
+  transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1),background-color 100ms cubic-bezier(.694, 0, 0.335, 1),color 100ms cubic-bezier(.694, 0, 0.335, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button-48:before {
+  animation: opacityFallbackOut .5s step-end forwards;
+  backface-visibility: hidden;
+  background-color: #EBEBEB;
+  clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateZ(0);
+  transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+  width: 100%;
+}
+
+.button-48:hover:before {
+  animation: opacityFallbackIn 0s step-start forwards;
+  clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.button-48:after {
+  background-color: #FFFFFF;
+}
+
+.button-48 a {
+  z-index: 1;
+  position: relative;
+}
+/*---SPLASH SCREEN----*/
+.intro{
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100vh;
+    background-color: #161616;
+    transition: 1s;
+}
+
+.logo-header{
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color:#ffffff;
+}
+
+.logo{
+    position: relative;
+    display: inline-block;
+    bottom:-20px;
+    opacity: 0;
+}
